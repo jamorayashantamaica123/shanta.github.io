@@ -1,0 +1,19 @@
+{
+  "students": [
+    {
+      "name": "Yashanta Jamora",
+      "age": 20,
+      "course": "Information Technology"
+    },
+    {
+      "name": "Benj Marianito",
+      "age": 22,
+      "course": "Computer Science"
+    },
+    {
+      "name": "Zeus Castino",
+      "age": 19,
+      "course": "Data Science"
+    }
+  ]
+}
