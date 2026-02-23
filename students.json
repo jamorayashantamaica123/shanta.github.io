@@ -1,17 +1,17 @@
 {
   "students": [
     {
-      "name": "Yashanta Jamora",
+      "name": "Alice Johnson",
       "age": 20,
       "course": "Information Technology"
     },
     {
-      "name": "Benj Marianito",
+      "name": "Bob Smith",
       "age": 22,
       "course": "Computer Science"
     },
     {
-      "name": "Zeus Castino",
+      "name": "Vince Isaac",
       "age": 19,
       "course": "Data Science"
     }

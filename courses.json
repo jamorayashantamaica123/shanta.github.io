@@ -3,8 +3,43 @@
     {
       "year_level": "1st",
       "sem": "1st",
-      "code": "IT111",
+      "code": "IT112",
       "description": "Computer Programming 1",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "1st",
+      "sem": "1st",
+      "code": "IT111",
+      "description": "Introduction to Computing",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "1st",
+      "sem": "1st",
+      "code": "GE101",
+      "description": "Purposive Communication",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "1st",
+      "sem": "1st",
+      "code": "GE102",
+      "description": "Mathematics in the Modern World",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "1st",
+      "sem": "1st",
+      "code": "PE101",
+      "description": "Physical Education 1",
+      "credit": "2.0"
+    },
+    {
+      "year_level": "1st",
+      "sem": "1st",
+      "code": "NSTP1",
+      "description": "National Service Training Program 1",
       "credit": "3.0"
     },
     {
@@ -12,6 +47,146 @@
       "sem": "2nd",
       "code": "IT113",
       "description": "Computer Programming 2",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "1st",
+      "sem": "2nd",
+      "code": "IT114",
+      "description": "Discrete Structures",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "1st",
+      "sem": "2nd",
+      "code": "GE103",
+      "description": "The Contemporary World",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "1st",
+      "sem": "2nd",
+      "code": "GE104",
+      "description": "Understanding the Self",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "1st",
+      "sem": "2nd",
+      "code": "PE102",
+      "description": "Physical Education 2",
+      "credit": "2.0"
+    },
+    {
+      "year_level": "1st",
+      "sem": "2nd",
+      "code": "NSTP2",
+      "description": "National Service Training Program 2",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "2nd",
+      "sem": "1st",
+      "code": "IT211",
+      "description": "Data Structures and Algorithms",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "2nd",
+      "sem": "1st",
+      "code": "IT212",
+      "description": "Object-Oriented Programming",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "2nd",
+      "sem": "1st",
+      "code": "IT213",
+      "description": "Database Management Systems",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "2nd",
+      "sem": "1st",
+      "code": "GE201",
+      "description": "Readings in Philippine History",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "2nd",
+      "sem": "2nd",
+      "code": "IT214",
+      "description": "Web Systems and Technologies",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "2nd",
+      "sem": "2nd",
+      "code": "IT215",
+      "description": "Computer Networks",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "2nd",
+      "sem": "2nd",
+      "code": "IT216",
+      "description": "Information Assurance and Security",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "2nd",
+      "sem": "2nd",
+      "code": "GE202",
+      "description": "Art Appreciation",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "3rd",
+      "sem": "1st",
+      "code": "IT311",
+      "description": "Systems Analysis and Design",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "3rd",
+      "sem": "1st",
+      "code": "IT312",
+      "description": "Software Engineering",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "3rd",
+      "sem": "2nd",
+      "code": "IT313",
+      "description": "Integrative Programming and Technologies 1",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "3rd",
+      "sem": "2nd",
+      "code": "IT314",
+      "description": "Human Computer Interaction",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "4th",
+      "sem": "1st",
+      "code": "IT411",
+      "description": "Capstone Project 1",
+      "credit": "3.0"
+    },
+    {
+      "year_level": "4th",
+      "sem": "1st",
+      "code": "IT412",
+      "description": "Practicum / Internship",
+      "credit": "6.0"
+    },
+    {
+      "year_level": "4th",
+      "sem": "2nd",
+      "code": "IT413",
+      "description": "Capstone Project 2",
       "credit": "3.0"
     }
   ]
