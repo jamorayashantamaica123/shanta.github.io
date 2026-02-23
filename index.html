@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>My Portfolio</h1>
+
+    <section class="card">
+      <h2>Student List</h2>
+      <ul id="student-list"></ul>
+      <p id="student-error" class="error"></p>
+    </section>
+
+    <section class="card">
+      <h2>Subjects Taken</h2>
+
+      <input type="text" id="searchInput" placeholder="Search subject by description..." />
+
+      <div class="table-wrap">
+        <table id="courseTable">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Semester</th>
+              <th>Code</th>
+              <th>Description</th>
+              <th>Credit</th>
+            </tr>
+          </thead>
+          <tbody id="courseBody"></tbody>
+        </table>
+      </div>
+
+      <p id="course-error" class="error"></p>
+    </section>
+  </div>
+
+  <script>
+    
+    const studentsURL = "https://raw.githubusercontent.com/jamorayashantamaica123/shanta.github.io/main/students.json";
+    const coursesURL  = "https://raw.githubusercontent.com/jamorayashantamaica123/shanta.github.io/main/courses.json";
+
+    
+    fetch(studentsURL)
+      .then(response => {
+        if (!response.ok) throw new Error("Students JSON not found or cannot be loaded.");
+        return response.json();
+      })
+      .then(data => {
+        const studentList = document.getElementById("student-list");
+
+        if (!data.students || !Array.isArray(data.students)) {
+          throw new Error("Invalid students.json format. Expected { students: [] }");
+        }
+
+        data.students.forEach(student => {
+          const li = document.createElement("li");
+          li.textContent = `${student.name} - ${student.age} (Course: ${student.course})`;
+          studentList.appendChild(li);
+        });
+      })
+      .catch(error => {
+        document.getElementById("student-error").textContent = error.message;
+        console.error("Students Error:", error);
+      });
+
+    
+    let allCourses = [];
+
+    fetch(coursesURL)
+      .then(response => {
+        if (!response.ok) throw new Error("Courses JSON not found or cannot be loaded.");
+        return response.json();
+      })
+      .then(data => {
+        if (!data.courses || !Array.isArray(data.courses)) {
+          throw new Error("Invalid courses.json format. Expected { courses: [] }");
+        }
+
+        allCourses = data.courses;
+        displayCourses(allCourses);
+      })
+      .catch(error => {
+        document.getElementById("course-error").textContent = error.message;
+        console.error("Courses Error:", error);
+      });
+
+    function displayCourses(courses) {
+      const tbody = document.getElementById("courseBody");
+      tbody.innerHTML = "";
+
+      courses.forEach(course => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${course.year_level}</td>
+          <td>${course.sem}</td>
+          <td>${course.code}</td>
+          <td>${course.description}</td>
+          <td>${course.credit}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    document.getElementById("searchInput").addEventListener("keyup", function () {
+      const keyword = this.value.toLowerCase();
+
+      const filtered = allCourses.filter(course =>
+        course.description.toLowerCase().includes(keyword)
+      );
+
+      displayCourses(filtered);
+    });
+  </script>
+
+</body>
+</html>
